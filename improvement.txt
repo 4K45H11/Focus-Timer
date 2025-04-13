@@ -1,0 +1,10 @@
+1.The music starts when keyboard play button clicked, even after it has been reset.
+2.Make UI better
+3.Make the aleart better and notification sound more soothing.
+4.Add some animation in the music section.
+
+5.Make the code optimised by making a generic function for music controlling like 
+function setupAudio(audio, playBtn, controlBox, pauseBtn, resumeBtn, resetBtn, volumeSlider) {
+  // Attach all listeners here
+}
+6.Prevent Double Play: You could add a .paused check before playing again

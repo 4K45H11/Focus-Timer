@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="bg-info-subtle">
+        <div class="text-center py-4 border">
+            <h1 class="py-1">Focus Timer</h1>
+            <label for="selectTime">Total Time</label>
+            <select name="" id="selectTime">
+                <option value="25">25 minutes</option>
+                <option value="1">1 minutes</option>
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+                <option value="45">45 minutes</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="py-5 text-center " id="timerSection">
+                <h1 class="py-3 fs-1" id="timer">00:00</h1>
+            </div>
+        </section>
+        <section class="text-center py-3" id="controls">
+            <button id="startBtn" style="display: inline-block;" class="mx-2 btn btn-success">Start</button>
+            <button id="resumeBtn" style="display: none;" class="mx-2 btn btn-primary">Resume</button>
+            <button id="pauseBtn" style="display: inline-block;" class="mx-2 btn btn-primary">Pause</button>
+            <button id="resetBtn" style="display: inline-block;" class="mx-2 btn btn-danger">Reset</button>
+        </section>
+        <section class="mt-3 p-4" id="soundTracks">
+
+            <div class="row">
+                <div class="col col-md-4">
+                    <div id="rainControl" style="display: none;"  class="text-center mb-3">
+                        <div class="mb-2">
+                            <label for="">Volume:
+                                <input type="range" min="0" max="1" step="0.01" value="0.5" id="rainVolume">
+                            </label>
+                        </div>
+                        <button id="rainPause" class="btn btn-outline-info mx-1">Pause</button>
+                        <button id="rainResume" class="btn btn-outline-success mx-1">Resume</button>
+                        <button id="rainReset" class="btn btn-outline-danger mx-1">Reset</button>
+    
+                    </div>
+                    <div class="card">
+                        <img style="height: 250px;" class="card-img-top" src="./resources/rain.png" alt="rain">
+                        <div class="card-body">
+                            <h5 class="card-title">Rain</h5>
+                            <p>Enjoy the beautiful sound of nature's ecstasy.</p>
+
+                            <button class="btn btn-info" id="rainBtn">Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div id="forestControl" style="display: none;" class="text-center mb-3">
+                        <div class="mb-2">
+                            <label for="">Volume:
+                                <input type="range" min="0" max="1" step="0.01" value="0.5"  id="forestVolume">
+                            </label>
+                        </div>
+                        <button id="forestPause" class="btn btn-outline-info mx-1">Pause</button>
+                        <button id="forestResume" class="btn btn-outline-success mx-1">Resume</button>
+                        <button id="forestReset" class="btn btn-outline-danger mx-1">Reset</button>
+                    </div>
+                    <div class="card">
+                        <img style="height: 250px; width: auto;" class="card-img-top" src="./resources/forest.png"
+                            alt="forest">
+                        <div class="card-body">
+                            <h5 class="card-title">Forest</h5>
+                            <p>Soothing sounds of forest.</p>
+                            <button class="btn btn-info" id="forestBtn">Play</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div id="pianoControl" style="display: none;" class="text-center mb-3">
+                        <div class="mb-2">
+                            <label for="">Volume:
+                                <input type="range" min="0" max="1" step="0.01" value="0.5" id="pianoVolume">
+                            </label>
+                        </div>
+                        <button id="pianoPause" class="btn btn-outline-info mx-1">Pause</button>
+                        <button id="pianoResume" class="btn btn-outline-success mx-1">Resume</button>
+                        <button id="pianoReset" class="btn btn-outline-danger mx-1">Reset</button>
+                    </div>
+                    <div class="card">
+                        <img style="height: 250px;" class="card-img-top" src="./resources/piano.png" alt="nature">
+                        <div class="card-body">
+                            <h5 class="card-title">Lake</h5>
+                            <p>Harmonious .</p>
+                            <button class="btn btn-info" id="lakeBtn">Play</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="audio.js"></script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
